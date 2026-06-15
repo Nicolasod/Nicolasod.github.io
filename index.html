@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Durante — Desenvolvedor de Software</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">nd<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Nicolas Durante</h1>
+      <h2 class="hero-role">Desenvolvedor de <span class="typed-wrapper"><span id="typed"></span><span class="cursor">|</span></span></h2>
+      <p class="hero-desc">
+        Apaixonado por construir soluções que automatizam processos, resolvem problemas reais e fazem a vida das pessoas mais fácil.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="https://github.com/Nicolasod" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">dev.py</span>
+        </div>
+        <pre class="code-body"><span class="kw">class</span> <span class="cls">Nicolas</span>:
+    nome     = <span class="str">"Nicolas Durante"</span>
+    cidade   = <span class="str">"Santa Catarina, BR"</span>
+    foco     = <span class="str">"Automação & Backend"</span>
+
+    skills   = [
+        <span class="str">"Python"</span>, <span class="str">"Java"</span>,
+        <span class="str">"JavaScript"</span>, <span class="str">"SQL"</span>,
+        <span class="str">"Groovy"</span>, <span class="str">"HTML/CSS"</span>
+    ]
+
+    <span class="kw">def</span> <span class="fn">resolver_problemas</span>(self):
+        <span class="kw">return</span> <span class="str">"sempre"</span> <span class="cm">✓</span></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">01.</span> Sobre mim</h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Sou desenvolvedor de software com foco em <strong>automação</strong>, <strong>backend</strong> e <strong>integrações</strong>.
+            Tenho experiência com sistemas ERP da Betha, desenvolvimento de scripts Groovy para automação de processos fiscais,
+            e construção de ferramentas que otimizam fluxos de trabalho.
+          </p>
+          <p>
+            Trabalho com uma stack variada que vai de <strong>Python</strong> para automação de dados até <strong>JavaScript/Node.js</strong>
+            para aplicações web, passando por <strong>Java</strong> e consultas <strong>SQL</strong> em ambientes corporativos.
+          </p>
+          <p>
+            Gosto de resolver problemas complexos com código limpo e soluções diretas — sem complicar o que pode ser simples.
+          </p>
+        </div>
+        <div class="sobre-cards">
+          <div class="stat-card">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Projetos no GitHub</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Linguagens</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Vontade de aprender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">02.</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Linguagens</h3>
+          <div class="skill-tags">
+            <span class="tag tag-python">Python</span>
+            <span class="tag tag-java">Java</span>
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-groovy">Groovy</span>
+            <span class="tag tag-sql">SQL</span>
+            <span class="tag tag-html">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Ferramentas & Plataformas</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Sybase</span>
+            <span class="tag">ODBC</span>
+            <span class="tag">Betha Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Áreas de foco</h3>
+          <div class="skill-tags">
+            <span class="tag">Automação</span>
+            <span class="tag">Scripts de Validação</span>
+            <span class="tag">Integrações ERP</span>
+            <span class="tag">Desenvolvimento Web</span>
+            <span class="tag">Documentação Técnica</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">03.</span> Projetos</h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://nicolasod.github.io/nexus-betha/" target="_blank" rel="noopener" title="Ver site">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Nicolasod/nexus-betha" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Nexus Betha</h3>
+          <p class="project-desc">
+            Hub centralizado de documentação técnica para o ecossistema Betha. Cobre automação cloud, scripts, eSocial, extensões, IA, implantação e treinamentos — tudo em páginas HTML interativas.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">Betha Cloud</span>
+            <span class="ptag">Documentação</span>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://nms-dex-web.vercel.app/" target="_blank" rel="noopener" title="Ver site">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Nicolasod/nmsDex" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name"><a href="https://nms-dex-web.vercel.app/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">nmsDex</a></h3>
+          <p class="project-desc">
+            Site de referência para o jogo No Man's Sky — uma espécie de enciclopédia/dex com informações sobre itens, planetas e elementos do universo do jogo.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">Game</span>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nicolasod/Extensoes-Chrome" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Extensões Chrome</h3>
+          <p class="project-desc">
+            3 extensões para o Google Chrome voltadas ao ecossistema Betha: <strong>chamados-sem-responsavel</strong>, <strong>extensao-betha-sul</strong> e <strong>token-extension</strong> — ferramentas que automatizam e agilizam o trabalho no dia a dia.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">Chrome Extension</span>
+            <span class="ptag">Betha</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nicolasod/OuvidoriaFront" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Ouvidoria Front</h3>
+          <p class="project-desc">
+            Frontend para sistema de ouvidoria municipal. Aplicação web com Node.js para recebimento e gestão de manifestações cidadãs.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">HTML</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nicolasod/bethacode" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">BethaCode</h3>
+          <p class="project-desc">
+            Exercícios e desafios do curso Betha Code, incluindo implementações em Java, queries SQL e resolução de problemas algorítmicos.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">SQL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="folder-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nicolasod/Documentacao" target="_blank" rel="noopener" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Documentação</h3>
+          <p class="project-desc">
+            Repositório de documentação técnica sobre scripts Groovy, fontes dinâmicas e relatórios para sistemas Betha.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Groovy</span>
+            <span class="ptag">Betha</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="see-more">
+        <a href="https://github.com/Nicolasod" target="_blank" rel="noopener" class="btn btn-outline">
+          Ver todos no GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Contato</h2>
+      <div class="contato-wrapper">
+        <p class="contato-desc">
+          Tem um projeto interessante, uma oportunidade ou só quer trocar uma ideia? Manda uma mensagem!
+        </p>
+        <div class="contato-links">
+          <a href="mailto:nicolasouriquesdurante@gmail.com" class="contato-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            <span>nicolasouriquesdurante@gmail.com</span>
+          </a>
+          <a href="https://github.com/Nicolasod" target="_blank" rel="noopener" class="contato-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.435 9.815 8.205 11.405.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.312 24 17.807 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+            <span>github.com/Nicolasod</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Desenvolvido por <span class="accent">Nicolas Durante</span> &mdash; 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
