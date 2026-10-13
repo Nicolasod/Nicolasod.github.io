@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 });
 
 // Typed text effect
-const words = ['Software', 'Automação', 'Backend', 'Soluções'];
+const words = ['Agentes', 'Automação', 'Orquestração', 'Claude API'];
 let wi = 0, ci = 0, deleting = false;
 const typedEl = document.getElementById('typed');
 
