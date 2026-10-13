@@ -319,7 +319,7 @@
   var graph = document.querySelector('.graph');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var timer = null, stopped = reduce, visible = true, current = 0, hovering = false;
-  chips.forEach(function (c, i) { if (c.getAttribute('aria-pressed') === 'true') current = i; });
+  pick(order[0]);
   function tick() {
     current = (current + 1) % order.length;
     pick(order[current]);
