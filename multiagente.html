@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
   <title>Sistema Multiagente de IA — Nicolas Durante</title>
   <meta name="description" content="Um orquestrador, seis agentes especialistas e uma regra: nada chega ao solicitante sem aprovação humana. Arquitetura do projeto." />
   <meta property="og:type" content="website" />
@@ -18,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <style>
+    :root { color-scheme: dark; }
     body { overflow-x: hidden; }
     .topbar {
       position: sticky; top: 0; z-index: 50; height: var(--nav-h);
@@ -36,8 +38,7 @@
     .eyebrow { font-family: var(--mono); font-size: .85rem; color: var(--accent); margin-bottom: .5rem; }
     .page-hero h1 {
       font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.15; margin-bottom: 1rem;
-      background: linear-gradient(135deg, #e6edf3 0%, #8b949e 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      color: #e6edf3;
     }
     .lead { color: var(--muted); font-size: 1.05rem; max-width: 720px; }
     .lead strong { color: var(--text); font-weight: 600; }
