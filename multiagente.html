@@ -119,6 +119,17 @@
     .funnel .f:nth-child(3) { width: 56%; border-color: var(--accent); background: rgba(88,166,255,.08); }
     .funnel .f small { display: block; color: var(--muted); font-size: .78rem; }
 
+    .kfoot { margin: 1rem 0 0; font-size: .88rem; }
+    .measure { margin-top: 1.75rem; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+    .measure h3 { font-size: 1rem; margin-bottom: .9rem; }
+    .measure .mrow { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .measure .m { text-align: center; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .8rem; }
+    .measure .m b { display: block; font-size: 1.9rem; color: var(--accent); line-height: 1.1; }
+    .measure .m:nth-child(2) b { color: var(--muted); }
+    .measure .m span { color: var(--muted); font-size: .82rem; }
+    .measure p { color: var(--muted); font-size: .88rem; margin-bottom: .6rem; }
+    .measure p.tech { margin: .8rem 0 0; padding-top: .8rem; border-top: 1px solid var(--border); font-size: .82rem; }
+
     .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     ul.clean { list-style: none; display: grid; gap: .6rem; }
     ul.clean li { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .75rem 1rem; font-size: .9rem; color: var(--muted); }
@@ -216,8 +227,8 @@
       <div class="stats">
         <div class="stat"><b>7</b><span>projetos: 1 orquestrador + 6 agentes</span></div>
         <div class="stat"><b>8</b><span>guardrails (hooks) no ambiente de trabalho</span></div>
-        <div class="stat"><b>3</b><span>bases de conhecimento</span></div>
-        <div class="stat"><b>285+</b><span>commits de evolução</span></div>
+        <div class="stat"><b>6</b><span>bases com busca semântica</span></div>
+        <div class="stat"><b>320+</b><span>commits de evolução</span></div>
       </div>
     </section>
 
@@ -237,7 +248,7 @@
       <div class="steps">
         <div class="step"><span class="who">Agente</span><h3>1 · Triagem</h3><p>Lê a fila, classifica e confere a situação da demanda.</p></div>
         <div class="step"><span class="who">Agente</span><h3>2 · Registro</h3><p>Pergunta antes de registrar o tempo. Nunca age sozinho.</p></div>
-        <div class="step"><span class="who">Agente</span><h3>3 · Análise</h3><p>Abre o sistema envolvido e investiga a causa.</p></div>
+        <div class="step"><span class="who">Agente</span><h3>3 · Análise</h3><p>Consulta as bases por significado, abre o sistema envolvido e investiga a causa.</p></div>
         <div class="step"><span class="who">Agente</span><h3>4 · Encaminhamento</h3><p>Move ou encaminha a demanda seguindo um guia validado.</p></div>
         <div class="step"><span class="who">Agente</span><h3>5 · Rascunho</h3><p>Escreve a resposta e mostra no chat antes de qualquer envio.</p></div>
         <div class="step human"><span class="who">Você</span><h3>6 · Aprovação</h3><p>Lê, ajusta e libera. Só então o agente fecha a etapa e confere o resultado.</p></div>
@@ -286,17 +297,24 @@
 
     <section class="block">
       <h2><span class="accent">05.</span>Conhecimento que gasta pouco token</h2>
-      <p class="sub">As bases são notas curtas em Markdown. O agente nunca lê a pasta inteira: desce do mapa até as poucas notas que importam.</p>
+      <p class="sub">As bases são notas e documentos curtos em Markdown. O agente nunca lê a pasta inteira: busca pelo significado da pergunta e abre só as poucas notas que importam.</p>
       <div class="funnel">
-        <div class="f">Índice raiz<small>o mapa da base</small></div>
-        <div class="f">Índice do sistema<small>uma linha de resumo por nota</small></div>
-        <div class="f">1 a 3 notas<small>só as que resolvem o caso</small></div>
+        <div class="f">Pergunta<small>em linguagem natural, sem precisar das palavras exatas</small></div>
+        <div class="f">Busca semântica local<small>embeddings no próprio computador, sem API externa</small></div>
+        <div class="f">2 a 3 candidatas<small>o agente abre e confere antes de usar</small></div>
+      </div>
+      <p class="sub kfoot">Se a busca não estiver configurada, o agente volta para a busca por palavra e para os índices de resumo, e tudo continua funcionando.</p>
+      <div class="measure">
+        <h3>Medido, não suposto</h3>
+        <div class="mrow"><div class="m"><b>72%</b><span>busca semântica</span></div><div class="m"><b>27%</b><span>busca por palavra-chave</span></div></div>
+        <p>Em 152 perguntas de teste, o primeiro resultado da busca semântica foi o certo em 72% dos casos, contra 27% da busca por palavra-chave. As perguntas foram escritas por mim, a partir das próprias bases, e a busca por palavra é uma aproximação. Com perguntas reais o resultado pode variar.</p>
+        <p class="tech">Roda 100% no computador, com fastembed e dois modelos multilíngues (um leve e um grande), indexa por seção, atualiza só o que mudou e tem um script que mede o acerto contra um conjunto de perguntas.</p>
       </div>
     </section>
 
     <div class="tags tags-end">
         <span>Claude API</span><span>Claude Code</span><span>Agentes</span><span>Orquestração</span>
-        <span>Human-in-the-loop</span><span>Hooks</span><span>Base de conhecimento</span><span>Python</span>
+        <span>Human-in-the-loop</span><span>Hooks</span><span>Base de conhecimento</span><span>RAG</span><span>Embeddings</span><span>Avaliação (evals)</span><span>Python</span>
       </div>
 
     <p class="note">Projeto pessoal com código privado.</p>
